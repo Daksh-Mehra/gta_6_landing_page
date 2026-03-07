@@ -76,7 +76,7 @@ main {
       @apply object-cover md:scale-125 h-full;
     }
     .title-logo {
-      @apply absolute h-full md:scale-125 top-0 object-cover;
+      @apply absolute h-full md:scale-125 top-0 object-cover ;
     }
     .trailer-logo {
       @apply absolute -bottom-5 w-48 left-1/2 -translate-x-1/2;
