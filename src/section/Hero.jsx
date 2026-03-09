@@ -40,7 +40,7 @@ const Hero = () => {
             opacity:1,onComplete:()=>{
                 gsap.to(".overlay-logo",{
                     opacity:0
-                },"<")
+                })
             }
 
         },"<").to(".entrance-message",{
