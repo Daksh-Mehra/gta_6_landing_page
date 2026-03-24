@@ -26,7 +26,7 @@ const SecondVideo = () => {
   return (
     <section className='lucia'>
         <div className="h-dvh">
-            <video src="/public/videos/output2.mp4"
+            <video src="/videos/output2.mp4"
             preload='auto'
             muted
             ref={videoref}
