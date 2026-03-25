@@ -4,7 +4,7 @@ import ComingSoon from './ComingSoon'
 import { useMaskSettings } from "../../constants"
 const Hero = () => {
 
-    const {initialMaskPos,  initialMaskSize,maskPos,maskSize}=useMaskSettings();
+    const {initialMaskPos, maskPos, initialMaskSize,maskSize}=useMaskSettings();
 
     useGSAP(() => {
         gsap.set('.mask-wrapper', { maskPosition: initialMaskPos, maskSize: initialMaskSize })
@@ -33,6 +33,7 @@ const Hero = () => {
             ease:"power1.inOut"
         }).to(".scale-out",{scale:1,ease:"power1.inOut"}).to(".mask-wrapper",{
             maskSize,
+            maskPosition:maskPos,
             ease:"power1.inOut"
         },"<").to(".mask-wrapper",{
             opacity:0
